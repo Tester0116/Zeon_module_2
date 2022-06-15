@@ -1,37 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'fonts';
+@import 'command';
+@import '../components/header/header';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: 500 14px 'Lato-500';
 }
 
 body {
-    background-color: #ececec;
-    font-family: 'Montserrat';
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    width: 100%;
-    min-height: 100vh;
-    overflow: overlay;
-/* custom scrollbar */
-&::-webkit-scrollbar {
+  background-color: white;
+  font-family: 'Montserrat' sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  min-height: 100vh;
+  overflow: overlay;
+
+  /* custom scrollbar */
+  &::-webkit-scrollbar {
     background-color: transparent;
     width: 20px;
   }
-  
- &::-webkit-scrollbar-track {
+
+  &::-webkit-scrollbar-track {
     background-color: transparent;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background-color: #a8bbbf;
     border-radius: 20px;
     border: 6px solid transparent;
     background-clip: content-box;
   }
-
 }
 
 a {
@@ -63,4 +65,3 @@ input[type='number']::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
-
