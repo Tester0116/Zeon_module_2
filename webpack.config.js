@@ -1,10 +1,12 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   mode: 'development',
   entry: [
     './src/index.pug',
+    './src/components/header/header.pug',
     './src/scripts/index.js',
     './src/styles/index.scss',
   ],
@@ -12,7 +14,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
     clean: true,
-    assetModuleFilename: '[name][ext]',
   },
   devtool: 'source-map',
   devServer: {
@@ -26,16 +27,16 @@ module.exports = {
   },
   module: {
     rules: [
-        {
-            test: /.pug$/,
-            use: [ 'pug-loader' ]
-        },
+      {
+        test: /.pug$/,
+        use: ['pug-loader'],
+      },
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|ttf)$/i,
         type: 'asset/resource',
       },
     ],
@@ -45,6 +46,14 @@ module.exports = {
       title: 'Webpack App',
       filename: 'index.html',
       template: 'src/index.pug',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: './src/assets',
+          to: './assets',
+        },
+      ],
     }),
   ],
 }

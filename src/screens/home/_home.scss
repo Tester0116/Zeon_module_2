@@ -1,0 +1,152 @@
+.home {
+  position: relative;
+  margin-top: 100px;
+  //   start cube side
+  &__cubeside {
+    &::after {
+      content: url(../assets/svg/bg-pentagons--home.svg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    &::before {
+      content: url(../assets/svg/top-line--home.svg);
+      position: absolute;
+      top: -10px;
+      left: 47%;
+      transform: translate(-47%, -10px);
+      z-index: -1;
+    }
+    &-right {
+      //   background-color: red;
+      margin-left: 120px;
+    }
+    &-left--title {
+      font: 700 44px 'Montserrat';
+      line-height: 54px;
+      text-transform: uppercase;
+      color: #282c37;
+    }
+    &-left--subtitle {
+      margin-top: 4px;
+      font: 700 30px 'Montserrat';
+      line-height: 37px;
+      text-transform: uppercase;
+      color: #282c37;
+    }
+    &-left--discription {
+      margin: 20px 0 32px 0;
+      font: 400 22px 'Lato-400';
+      line-height: 26px;
+      color: #282c37;
+    }
+  }
+  //   end cube side
+
+  //   start questions side
+  &__questions {
+    position: relative;
+    &-line {
+      transform: translate(220px, -70px);
+    }
+    &-block {
+      display: flex;
+      justify-content: space-around;
+      transform: translateY(-50px);
+    }
+    &-item {
+      width: 381px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-item--text {
+      font: 400 18px 'Lato-400';
+      line-height: 22px;
+      color: #282c37;
+      max-width: 282px;
+    }
+  }
+  //   end questions side
+
+  //   start services side
+  &__services {
+    margin-bottom: 100px;
+    position: relative;
+    &-line {
+      transform: translate(95px, -10px);
+    }
+    &--title {
+      position: relative;
+      font: 700 30px 'Montserrat';
+      line-height: 37px;
+      text-transform: uppercase;
+
+      color: #282c37;
+      // margin-left: 30px;
+      padding-left: 50px;
+      transform: translateY(-48px);
+      &::before {
+        content: url(../assets/svg/lg-pentagon--home.svg);
+        position: absolute;
+        bottom: -40px;
+
+        left: 0;
+        z-index: -1;
+      }
+    }
+    &-itembar {
+      margin-top: 80px;
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 15px;
+      grid-template-areas:
+        'first second second'
+        'first third fourth';
+    }
+
+    &-item {
+      hyphens: auto;
+      background-color: #6ca7ef;
+      text-align: center;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &-item--1 {
+      grid-area: first;
+      height: 507px;
+      .home__services-item--text {
+        max-width: 270px;
+        margin-top: 30px;
+      }
+    }
+    &-item--2 {
+      grid-area: second;
+      display: flex;
+      flex-direction: row;
+      .home__services-item--text {
+        max-width: 495px;
+        align-self: center;
+      }
+    }
+    &-item--3 {
+      grid-area: third;
+    }
+    &-item--4 {
+      grid-area: fourth;
+    }
+    &-item--text {
+      font: 600 18px 'Lato-600';
+      line-height: 22px;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      margin-top: 30px;
+    }
+  }
+  //   end services side
+}
