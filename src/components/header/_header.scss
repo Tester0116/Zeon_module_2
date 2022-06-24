@@ -19,6 +19,13 @@ header {
 .social-media {
   width: 120px;
 }
+.social-link {
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    fill: #47cf34;
+  }
+}
 
 // start burger-menu
 .menu-btn {

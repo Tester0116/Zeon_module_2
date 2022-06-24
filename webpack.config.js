@@ -43,9 +43,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack App',
       filename: 'index.html',
       template: 'src/index.pug',
+      inject: true,
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/screens/services/services.pug',
+      filename: 'services.html',
+      inject: true,
     }),
     new CopyWebpackPlugin({
       patterns: [

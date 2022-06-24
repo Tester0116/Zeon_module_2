@@ -1,10 +1,17 @@
 footer {
   padding: 27px 0;
   background-color: #3f4750;
-  .right-text {
+  .copyright-text {
     font: 400 14px 'Lato-400';
     line-height: 17px;
     letter-spacing: 0.03em;
     color: #9fa7b0;
+  }
+  .social-link {
+    fill: #9fa7b0;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      fill: #47cf34;
+    }
   }
 }

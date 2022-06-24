@@ -65,6 +65,11 @@
       line-height: 22px;
       color: #282c37;
       max-width: 282px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        text-decoration: underline;
+        color: #5391dc;
+      }
     }
   }
   //   end questions side
@@ -116,6 +121,10 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background-color: #5391dc;
+      }
     }
     &-item--1 {
       grid-area: first;
@@ -149,4 +158,12 @@
     }
   }
   //   end services side
+}
+@media (max-width: 992px) {
+  .menu-btn {
+    display: flex;
+  }
+  .navbar-collapse {
+    display: none;
+  }
 }
