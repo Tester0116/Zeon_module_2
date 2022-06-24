@@ -1,0 +1,176 @@
+#price {
+    padding-bottom: 50px;
+    .price__items {
+        justify-content: center;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+
+        .training__bg-img {
+            position: absolute;
+            top: -80px;
+            right: 0;
+            z-index: 1;
+        }
+
+        .training__cube-img {
+            position: absolute;
+            top: -40px;
+            left: 40px;
+            z-index: 1;
+        }
+
+        .price__item {
+            position: relative;
+            z-index: 3;
+            max-width: 1173px;
+            margin: auto;
+            height: auto;
+            background: #FFFFFF;
+            box-shadow: 4px 4px 20px rgba(40, 44, 55, 0.2);
+            border-radius: 20px;
+            padding: 39px 0 39px 26px;
+            margin-bottom: 40px;
+
+            .col-md-6 {
+                flex: 0 0 auto;
+                width: 48.5%;
+            }
+
+            // .col-12 {
+            //     flex: 0 0 auto;
+            //     width: 100%;
+            // background-color: green;
+            // }
+
+            .price__item-title {
+                max-width: 503px;
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 37px;
+                color: #282C37;
+                margin-bottom: 30px;
+            }
+
+            .price__item-descr {
+                font-family: 'Lato';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: #282C37;
+                margin-bottom: 5px;
+            }
+
+            .price__item-descrs {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: #282C37;
+                margin-bottom: 30px;
+            }
+
+            .price__item-btn {
+                width: 229px;
+                height: 48px;
+                background: #287EE7;
+                border-radius: 8px;
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding: 0 20px;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:hover {
+                    background: #003e8a;
+                    transition: 0.2s;
+                }
+            }
+
+            .price__item-plan {
+                display: flex;
+                gap: 41px;
+                margin-top: 13px;
+                align-items: flex-start;
+
+                p {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 20px;
+                    margin: 0;
+                    color: #282C37;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    #price {
+        .price__items {
+            .price__item {
+                .price__item-title {
+                    font-size: 25px;
+                    line-height: 27px;
+                    margin-bottom: 15px;
+                }
+
+                .price__item-descr {
+                    font-size: 15px;
+                    line-height: 20px;
+                    margin-bottom: 5px;
+                }
+
+                .price__item-descrs {
+                    font-size: 15px;
+                    line-height: 20px;
+                    margin-bottom: 15px;
+                }
+
+                .price__item-plan {
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    #price {
+        .price__items {
+
+            .training__cube-img,
+            .training__bg-img {
+                display: none;
+            }
+
+            .price__item {
+                padding: 20px 8px 20px;
+
+                .col-md-6 {
+                    flex: 0 0 auto;
+                    width: 48.5%;
+                }
+
+                .col-12 {
+                    flex: 0 0 auto;
+                    width: 100%;
+                }
+
+                .price__item-btn {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

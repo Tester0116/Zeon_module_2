@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@import '/src/css/components/breadcrumbs.scss';
+@import '/src/css/components/header.scss';
+@import '/src/css/components/home.scss';
+@import '/src/css/components/footer.scss';
+@import '/src/css/components/fonts/_lato.scss';
+@import '/src/css/components/services.scss';
+@import '/src/css/components/training.scss';
+@import '/src/css/components/consultation.scss';
+@import '/src/css/components/price.scss';
+@import '/src/css/components/modal.scss';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+a {
+    text-decoration: none;
+}
+.prime__button {
+    padding: 14px 32px 14px 32px;
+    background: #47CF34;
+    border: 1px solid #47CF34;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover {
+        transition: 0.2s;
+        background: #30B01E;
+    }
+}
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+}

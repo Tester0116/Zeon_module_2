@@ -1,0 +1,18 @@
+extends /src/pug/maket.pug
+include /src/pug/mixins/price-card.pug
+block content
+    include /src/pug/api/json.pug
+    section#price
+        .container
+            .breadcrumbs
+                a(href='./') Главный  
+                p /
+                p.active Тренинги
+            .price__items
+                img.training__cube-img(src="/src/assets/img/icons/cube_one.svg", alt="")
+                img.training__bg-img(src="/src/assets/img/services_img.png", alt="")
+                each item in trainings
+                    +priceCard(item)
+                
+
+
