@@ -11,44 +11,40 @@
 @import '/src/css/components/price.scss';
 @import '/src/css/components/modal.scss';
 
-
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .prime__button {
-    padding: 14px 32px 14px 32px;
-    background: #47CF34;
-    border: 1px solid #47CF34;
-    border-radius: 8px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  padding: 14px 32px 14px 32px;
+  background: #47cf34;
 
-    &:hover {
-        transition: 0.2s;
-        background: #30B01E;
-    }
+  border: 1px solid #47cf34;
+  border-radius: 8px;
+  font: 700 16px 'Montserrat';
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background: #30b01e;
+  }
 }
 textarea {
-    border: none;
-    overflow: auto;
-    outline: none;
+  border: none;
+  overflow: auto;
+  outline: none;
 
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 
-    resize: none; /*remove the resize handle on the bottom right*/
+  resize: none; /*remove the resize handle on the bottom right*/
 }

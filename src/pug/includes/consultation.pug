@@ -1,8 +1,8 @@
-.services-title__consultation
+form.services-title__consultation
     img.services-consultation__img1(src="/src/assets/img/icons/cube_one.svg", alt="")
     img.services-consultation__img2(src="/src/assets/img/icons/cube_one.svg", alt="")
     img.services-consultation__img3(src="/src/assets/img/icons/cube_one.svg", alt="")
     .services-consultation__block  
-        input.services-consultation__input(type="text" placeholder="Ваше имя")
-        input.services-consultation__input(type="text" placeholder="Email")
-        button Получить консультацию
+        input.services-consultation__input(type="text" placeholder="Ваше имя" required)
+        input.services-consultation__input(type="email" placeholder="Email" required)
+        button(type='submit') Получить консультацию
